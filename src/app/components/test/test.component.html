@@ -1,0 +1,14 @@
+<h1 [ngStyle]="{ color: 'red' }">{{ title }}</h1>
+<h2>{{ getFullName() }}</h2>
+<p class="event-example" [ngClass]="{ clicked: isClickState }">
+  {{ isClickState ? "True" : "False" }}
+</p>
+
+<button
+  (click)="toggleState()"
+  [ngClass]="{ active: isActive, disabled: isDisabled }"
+>
+  toggle state
+</button>
+
+<p>test component works!</p>

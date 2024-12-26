@@ -1,0 +1,44 @@
+p {
+    color: #ff0000;
+}
+
+button {
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+    border-color: #f0ffff;
+}
+
+button:hover {
+    background: #022cd4;
+}
+
+button:disabled {
+    background: #0223a576;
+    cursor: not-allowed;
+}
+
+button.active {
+    background: #0223a5;
+}
+
+button.disabled {
+    background: #0223a576;
+    cursor: not-allowed;
+}
+
+.event-example {
+    width: 12.5rem;
+    height: 6.25rem;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.clicked {
+    background: #2b57f6;
+}
