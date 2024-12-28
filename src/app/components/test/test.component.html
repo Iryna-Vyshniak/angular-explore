@@ -12,3 +12,15 @@
 </button>
 
 <p>test component works!</p>
+
+<input [(ngModel)]="userName" type="text" placeholder="Type your name" />
+<p>Hello, {{ userName }}</p>
+
+<form>
+  <label for="email">Email:</label>
+  <input type="email" [(ngModel)]="userEmail" name="'email" />
+  <button (click)="submitForm()" type="submit">
+    <button type="submit" [disabled]="!userEmail">Submit</button>
+  </button>
+</form>
+<p>Your email: {{ userEmail }}</p>
